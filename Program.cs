@@ -8,7 +8,7 @@ namespace LogicalProgramsDay6
         {
             Console.WriteLine("Welcome to Logical Programs!");
             Console.WriteLine("please enter below option ");
-            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5.StopWatch");
+            Console.WriteLine("1:Fibonacci\n2:PerfectNumber\n3:PrimeNumber\n4:ReverseNumber\n5.StopWatch\n6.Coupon Number");
             int options = Convert.ToInt32(Console.ReadLine());
             switch (options)
             {
@@ -34,6 +34,9 @@ namespace LogicalProgramsDay6
                     break;
                 case 5:
                     StopWatch.Watch();
+                    break;
+                case 6:
+                    CouponNumber.Coupon();
                     break;
                 default:
                     Console.WriteLine("Plaese choose correct option");
